@@ -26,7 +26,7 @@ for (let hour = 9; hour <= 17; hour++) {
         </form>
     `);
 
-    // Append the time block to the planner
-    $("#planner").append(timeBlock);
+    // Append the time block to the schedule
+    $("#schedule").append(timeBlock);
 }
 
