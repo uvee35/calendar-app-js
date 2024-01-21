@@ -3,6 +3,16 @@ body {
     font-size: 16px;
     line-height: 1;
   }
+
+
+  /* Header Jumbotron */
+  .jumbotron {
+    text-align: center;
+    color: black;
+    border-radius: 0;
+    border-bottom: 10px solid black;
+    background-image: url(../assets/images/background.jpg);
+  }
   
   textarea {
     background: transparent;
