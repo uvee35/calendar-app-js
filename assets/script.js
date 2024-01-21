@@ -30,3 +30,23 @@ for (let hour = 9; hour <= 17; hour++) {
     $("#schedule").append(timeBlock);
 }
 
+// Handle form submissions and store entries
+$("form").on("submit", (event) => {
+    event.preventDefault();
+    const inputValue = $(event.target).find('textarea[name="entry"]').val();
+    const time = $(event.target).data('time');
+    console.log(`Input Value for time ${time}:`, inputValue);
+    localStorage.setItem(`time-${time}`, inputValue);
+});
+
+// Retrieve and populate stored entries
+$(document).ready(() => {
+    for (let hour = 9; hour <= 17; hour++) {
+        const storedValue = localStorage.getItem(`time-${hour}`);
+        if (storedValue) {
+            $(`form[data-time="${hour}"] textarea[name="entry"]`).val(storedValue);
+        }
+    }
+});
+
+
