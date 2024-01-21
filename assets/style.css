@@ -14,13 +14,41 @@ body {
     background-image: url(../assets/images/background.jpg);
   }
   
+  button#clear-cal {
+    margin-top: 10px
+  }
+  form {
+    display: flex;
+    margin: 0.5rem 0;
+  
+  }
+  
+  .hour {
+    border-top: 1px dashed #000000;
+    text-align: right;
+    background-color: #ffffff;
+    padding: 10px;
+    color: #000000;
+    font-weight: bold;
+  }
+  .row {
+    height: 80px;
+    white-space: pre-wrap;
+    border-top: 1px solid white;;
+  }
+  label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
   textarea {
     background: transparent;
     border: none;
     resize: none;
     color: #000000;
     border-left: 1px solid black;
-    padding: 10px;
+    padding: 20px;
   }
   
   header {
@@ -54,22 +82,27 @@ body {
   }
   
   .past {
-    background-color: #d3d3d3;
-    color: white;
+    background-color: brown;
+    color: rgb(0, 0, 0);
   }
   
   .present {
-    background-color: #ff6961;
-    color: white;
+    background-color: #61d7ff;
+    color: black;
   }
   
   .future {
-    background-color: #77dd77;
-    color: white;
+    background-color: greenyellow;
+    color: black;
   }
   
   .saveBtn {
-    border-left: 1px solid black;
+    font-size: 1.5em;
+  border-left: 1px solid black;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  margin-left: auto;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #06aed5;
@@ -77,7 +110,8 @@ body {
   }
   
   .saveBtn i:hover {
-    font-size: 20px;
-    transition: all 0.3s ease-in-out;
+    font-size: 1.4rem; 
+    transition: all 0.15s ease-in-out; 
   }
+  
   
