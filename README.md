@@ -8,12 +8,9 @@ The Daily Planner App is a web application that helps employees with busy schedu
 
 As an employee with a busy schedule, I want to add important events to a daily planner so that I can manage my time effectively.
 
-## Past Time
-<img width="2212" alt="Screenshot 2024-01-21 at 21 20 12" src="https://github.com/uvee35/calendar-app-js/assets/151088688/1fb242c3-f3e5-4c1c-b8e8-8fa558b40e32">
+## Mock-Up
 
-Future
-![Uploading Screenshot 2024-01-22 at 07.41.17.png…]()
-
+<img width="2210" alt="Screenshot 2024-01-22 at 13 24 30" src="https://github.com/uvee35/calendar-app-js/assets/151088688/4ec38142-6080-4e06-86d4-3997f6fbab15">
 
 
 ## Technologies Used
