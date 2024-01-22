@@ -14,6 +14,7 @@ body {
     background-image: url(../assets/images/background.jpg);
   }
   
+  /* Clear Button */
   button#clear-cal {
     margin-top: 10px
   }
@@ -75,27 +76,39 @@ body {
     border-top: 1px solid white;
   }
   
+  /* Hour Display */
   .hour {
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
   }
   
+  /* Past Block */
   .past {
     background-color: brown;
-    color: rgb(0, 0, 0);
+    color:white;
   }
   
+  /* Present Block */
   .present {
     background-color: #61d7ff;
     color: black;
   }
   
+  /* Future Block */
   .future {
     background-color: greenyellow;
     color: black;
   }
   
+  /* CSS for the message div */
+#header-message {
+  font-size: 15px;
+  margin-top: 40px;
+}
+
+
+/* Save Button */
   .saveBtn {
     font-size: 1.5em;
   border-left: 1px solid black;
@@ -109,9 +122,12 @@ body {
     color: white;
   }
   
+
+  /* Save Button Hover */
   .saveBtn i:hover {
     font-size: 1.4rem; 
     transition: all 0.15s ease-in-out; 
   }
+  
   
   
