@@ -37,6 +37,14 @@ $("form").on("submit", (event) => {
     const time = $(event.target).data('time');
     console.log(`Input Value for time ${time}:`, inputValue);
     localStorage.setItem(`time-${time}`, inputValue);
+
+    // Display a message in the header
+    $("#header-message").text(` Appointment entered to localStorage ✓`);
+   
+    // Clear the message after 2 seconds
+    setTimeout(() => {
+        $("#header-message").text('');
+    }, 2000); 
 });
 
 // Retrieve and populate stored entries
@@ -45,8 +53,22 @@ $(document).ready(() => {
         const storedValue = localStorage.getItem(`time-${hour}`);
         if (storedValue) {
             $(`form[data-time="${hour}"] textarea[name="entry"]`).val(storedValue);
+
         }
     }
 });
+
+function clearCalendar() {
+    // Loop over the hours for which we have stored events
+    for (let hour = 9; hour <= 17; hour++) {
+        // Remove the item from localStorage
+        localStorage.removeItem(`time-${hour}`);
+        // Clear the textarea value
+        $(`form[data-time="${hour}"] textarea[name="entry"]`).val('');
+    }
+}
+
+// Clear calendar click handler
+$("#clear-cal").on("click", clearCalendar);
 
 
