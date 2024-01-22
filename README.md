@@ -10,6 +10,8 @@ As an employee with a busy schedule, I want to add important events to a daily p
 
 ## Mock-Up
 
+https://uvee35.github.io/calendar-app-js/
+
 <img width="2210" alt="Screenshot 2024-01-22 at 13 24 30" src="https://github.com/uvee35/calendar-app-js/assets/151088688/4ec38142-6080-4e06-86d4-3997f6fbab15">
 
 
